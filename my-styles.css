@@ -1,0 +1,97 @@
+body{
+	background-image: url("images/background.jpg");
+	background-color: skyblue;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header"
+		"images"
+		"button";
+}
+
+header{
+	background-color: skyblue;
+	margin: 0;
+	padding-bottom: 20px;
+	grid-area: header;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  color: #e22f8f;
+  margin: 0;
+  text-align: center;
+  font-size: 5em;
+  background-color: white;
+  line-height: 80px;
+}
+
+.button-wrapper{
+	grid-area: button;
+	display: flex;
+	justify-content: center;
+}
+
+#show-me{
+	grid-area: button;
+	font-size: 2rem;
+	height: 50px;
+	background-color: skyblue;
+	color: white;
+	border: white 2px solid;
+	font-family: 'Lobster', cursive;
+	border-radius: 2px;
+}
+
+.cat-card-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-area: images;
+}
+
+.cat-card{
+	max-width: 350px;
+	margin: 2vw;
+	align-items: stretch;
+}
+
+.cat-photo{
+	width: 100%;
+	background-color: white;
+	border-radius: 17px;
+	border: 4px white solid;
+}
+
+#creator{
+	
+}
+
+@media only screen and (max-width: 800px) {
+	h1{
+		font-size: 3rem;
+	  }
+	.cat-card{
+		max-width: 55vw;
+		align-items: stretch;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	header{
+		padding-bottom: 5px;
+	}
+	h1{
+		font-size: 2.5rem;
+	  }
+	.cat-card{
+		max-width: 52vw;
+		align-items: stretch;
+	}
+}
