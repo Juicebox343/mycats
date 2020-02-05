@@ -1,8 +1,7 @@
-const miloFrame = document.getElementById('milo-photo'),
-	chloeFrame = document.getElementById('chloe-photo'),
-	duoFrame = document.getElementById('duo-photo');
-
-const moreButton = document.getElementById('show-me');
+const 	miloFrame = document.querySelector('#milo-photo'),
+		chloeFrame = document.querySelector('#chloe-photo'),
+		duoFrame = document.querySelector('#duo-photo'),
+		moreButton = document.querySelector('.show-me');
 
 moreButton.addEventListener('click', morePhotos);
 
